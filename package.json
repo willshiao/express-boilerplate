@@ -1,0 +1,29 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for quick Express projects",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willshiao/express-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "express"
+  ],
+  "author": "William Shiao <willshiao@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willshiao/express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/willshiao/express-boilerplate#readme",
+  "dependencies": {
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "winston": "^2.4.0"
+  }
+}
