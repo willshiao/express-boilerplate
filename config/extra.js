@@ -16,5 +16,12 @@ module.exports = {
       host: '127.0.0.1',
       port: 6379
     }
+  },
+  // Json web token settings. Required for the jwt module.
+  jwt: {
+    secret: 'changeme',
+    settings: {
+      expiresIn: '5d'
+    }
   }
 }
