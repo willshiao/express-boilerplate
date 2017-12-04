@@ -9,5 +9,12 @@ module.exports = {
   site: {
     // Allowed origins for CORS. Required by the enableCrossOrigin function in middleware.js.
     corsAllow: '*'
+  },
+  // Redis configuration settings. Required for the redis module.
+  redis: {
+    connection: {
+      host: '127.0.0.1',
+      port: 6379
+    }
   }
 }
