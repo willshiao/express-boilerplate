@@ -2,16 +2,21 @@
 
 const mongoose = require('mongoose')
 const config = require('config')
-const bcrypt = require('bcrypt-as-promised')
+const bcrypt = require('bcrypt')
 const Promise = require('bluebird')
 
 const { Schema } = mongoose
 
 const userSchema = new Schema({
-  name: String,
-  email: { type: String, unique: true },
-  password: String,
-  createdAt: { type: Date, default: Date.now }
+  email: {
+    type: String,
+    required: true,
+    index: { unique: true }
+  },
+  password: {
+    type: String,
+    required: true
+  } // Password hash
 })
 
 userSchema.pre('save', function preSaveUser (next) {
