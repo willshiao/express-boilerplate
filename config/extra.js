@@ -10,6 +10,13 @@ module.exports = {
     // Allowed origins for CORS. Required by the enableCrossOrigin function in middleware.js.
     corsAllow: '*'
   },
+  // MongoDB/mongoose configuration settings
+  db: {
+    url: 'mongodb://localhost:27017/sample',
+    options: {
+      useNewUrlParser: true
+    }
+  },
   // Redis configuration settings. Required for the redis module.
   redis: {
     connection: {
